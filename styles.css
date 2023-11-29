@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  background: #333;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  outline: 3px solid limegreen;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+button {
+  padding: 0.5rem;
+}
+
+input {
+  background: #fff;
+  color: #333;
+}
+
+#table {
+  display: flex;
+
+  height: 90vh;
+  width: 100vw;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.items {
+  width: 4rem;
+  height: 4rem;
+
+  border: 2px whitesmoke solid;
+  outline: 1px solid limegreen;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table .col {
+  display: flex;
+  flex-direction: column;
+}
+
+#table .col:nth-child(2n) {
+  flex-direction: column-reverse;
+}
